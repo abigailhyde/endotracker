@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "name": "Physical",
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "code": 84229001,
+                "selected": false
+            },
+            {
+                "name": "Muscle pain",
+                "code": 68962001,
+                "selected": false
+            },
+            {
+                "name": "Headache",
+                "code": 25064002,
+                "selected": false
+            },
+            {
+                "name": "Acne",
+                "code": 88616000,
+                "selected": false
+            }, 
+            {
+                "name": "Pelvic pain",
+                "code": 30473006,
+                "selected": false
+            }, 
+            {
+                "name": "Bloating",
+                "code": 116289008,
+                "selected": false
+            }, 
+            {
+                "name": "Abominal/digestive pain",
+                "code": 21522001,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Menstrual",
+        "symptoms": [
+            {
+                "name": "Spotting",
+                "code": 102868004,
+                "selected": false
+            },
+            {
+                "name": "Light bleeding",
+                "code": 64206003 ,
+                "selected": false
+            },
+            {
+                "name": "Moderate bleeding",
+                "code": 289539007,
+                "selected": false
+            },
+            {
+                "name": "Heavy bleeding",
+                "code": 315224006,
+                "selected": false
+            },
+            {
+                "name": "Clotting",
+                "code": 289532003,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Mood",
+        "symptoms": [
+            {
+                "name": "Irritable",
+                "code": 55929007,
+                "selected": false
+            },
+            {
+                "name": "Anxious",
+                "code": 373066001,
+                "selected": false
+            },
+            {
+                "name": "Mood swings",
+                "code": 18963009,
+                "selected": false
+            },
+            {
+                "name": "Sad",
+                "code": 49830009,
+                "selected": false
+            },
+            {
+                "name": "Happy",
+                "code": 112080002,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Other",
+        "symptoms": [
+            {
+                "name": "Brain fog",
+                "code": 386806002,
+                "selected": false
+            }
+        ]
+    }
+]

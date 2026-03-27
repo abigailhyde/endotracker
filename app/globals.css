@@ -13,6 +13,12 @@
   --color-dark-beige: oklch(0.8003 0.0407 70.91);
   --color-dark-gray: oklch(0.2931 0 0);
 
+  --color-strawberry: oklch(0.6509 0.2199 25.04);
+  --color-tangerine: oklch(0.6959 0.1772 45.27);
+  --color-orange: oklch(0.7588 0.1651 63.5);
+  --color-marigold: oklch(0.8528 0.1452 85.83);
+  --color-yellow: oklch(0.8312 0.1685 80.97);
+
 }
 
 @theme inline {
@@ -34,3 +40,4 @@ body {
   color: var(--foreground);
   font-family: serif;
 }
+
