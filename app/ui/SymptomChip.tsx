@@ -1,21 +1,20 @@
 "use client";
-import React, { useState } from 'react';
 
-export function SymptomChip({children}: { children: string}) {
-    const [selected, setSelected] = useState(false);
+import { forwardRef } from "react";
+import { Symptom } from "../lib/types";
 
-    const notSelectedSymptomsStyle = "border-medium-beige";
-    const selectedSymptomsStyle = "bg-medium-beige border-medium-beige";
-
-    return(
-        <div onClick = {() => setSelected(!selected)}
-            className = {`
-                ${selected ? selectedSymptomsStyle : notSelectedSymptomsStyle}
-                w-fit rounded-2xl border e py-1 px-4 text-center text-sm  transition-all shadow-xs text-dark-gray
-            `}
-        
-        >
-            {children}
-        </div>
-    )
+interface ChipProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    symptom: Symptom
 }
+
+export const SymptomChip = forwardRef<HTMLInputElement, ChipProps>(({symptom, ...props}, ref) => {
+    return(
+        <label className="border-medium-beige checked:bg-medium-beige checked: border-medium-beige w-fit rounded-2xl border e py-1 px-4 text-center text-sm  transition-all shadow-xs text-dark-gray">
+            <input 
+            {...props}
+            ref={ref}
+            type="checkbox" value={symptom.code}/>
+            <span>{symptom.display}</span>
+        </label>
+    )
+})

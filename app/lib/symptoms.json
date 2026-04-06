@@ -2,114 +2,99 @@
     {
         "id": 1,
         "name": "Physical",
+        "iconSrc": "physical.png",
         "symptoms": [
             {
-                "name": "Fatigue",
-                "code": 84229001,
-                "selected": false
+                "display": "Fatigue",
+                "code": 84229001            },
+            {
+                "display": "Muscle pain",
+                "code": 68962001
             },
             {
-                "name": "Muscle pain",
-                "code": 68962001,
-                "selected": false
+                "display": "Headache",
+                "code": 25064002
             },
             {
-                "name": "Headache",
-                "code": 25064002,
-                "selected": false
-            },
-            {
-                "name": "Acne",
-                "code": 88616000,
-                "selected": false
+                "display": "Acne",
+                "code": 88616000
             }, 
             {
-                "name": "Pelvic pain",
-                "code": 30473006,
-                "selected": false
+                "display": "Pelvic pain",
+                "code": 30473006
             }, 
             {
-                "name": "Bloating",
-                "code": 116289008,
-                "selected": false
+                "display": "Bloating",
+                "code": 116289008
             }, 
             {
-                "name": "Abominal/digestive pain",
-                "code": 21522001,
-                "selected": false
+                "display": "Abominal/digestive pain",
+                "code": 21522001
             }
         ]
     },
     {
         "id": 2,
         "name": "Menstrual",
+        "iconSrc": "blood.png",
         "symptoms": [
             {
-                "name": "Spotting",
-                "code": 102868004,
-                "selected": false
+                "display": "Spotting",
+                "code": 102868004
             },
             {
-                "name": "Light bleeding",
-                "code": 64206003 ,
-                "selected": false
+                "display": "Light bleeding",
+                "code": 64206003 
             },
             {
-                "name": "Moderate bleeding",
-                "code": 289539007,
-                "selected": false
+                "display": "Moderate bleeding",
+                "code": 289539007
             },
             {
-                "name": "Heavy bleeding",
-                "code": 315224006,
-                "selected": false
+                "display": "Heavy bleeding",
+                "code": 315224006
             },
             {
-                "name": "Clotting",
-                "code": 289532003,
-                "selected": false
+                "display": "Clotting",
+                "code": 289532003
             }
         ]
     },
     {
         "id": 3,
         "name": "Mood",
+        "iconSrc": "mood.png",
         "symptoms": [
             {
-                "name": "Irritable",
-                "code": 55929007,
-                "selected": false
+                "display": "Irritable",
+                "code": 55929007
             },
             {
-                "name": "Anxious",
-                "code": 373066001,
-                "selected": false
+                "display": "Anxious",
+                "code": 373066001
             },
             {
-                "name": "Mood swings",
-                "code": 18963009,
-                "selected": false
+                "display": "Mood swings",
+                "code": 18963009
             },
             {
-                "name": "Sad",
-                "code": 49830009,
-                "selected": false
+                "display": "Sad",
+                "code": 49830009
             },
             {
-                "name": "Happy",
-                "code": 112080002,
-                "selected": false
+                "display": "Happy",
+                "code": 112080002
             }
         ]
     },
     {
         "id": 4,
         "name": "Other",
+        "iconSrc": "heart.png",
         "symptoms": [
             {
-                "name": "Brain fog",
-                "code": 386806002,
-                "selected": false
+                "display": "Brain fog",
+                "code": 386806002
             }
         ]
     }
