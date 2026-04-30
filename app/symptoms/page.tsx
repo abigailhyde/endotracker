@@ -9,8 +9,12 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { Symptom, SymptomGroup } from '../lib/types';
 import symptomData from '../lib/symptoms.json'
 import { postPatientObservation } from '../lib/fhir/resources';
+import { toast } from "sonner"
+import { useRouter } from "next/navigation"
+
 
 export default function Page() {
+  const router = useRouter()
   const [activeSection, setActiveSection] = useState<string | null>("Physical");
 
   const symptomDataTyped = symptomData as SymptomGroup[]
@@ -29,9 +33,14 @@ export default function Page() {
   };
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    await postPatientObservation(data.selectedSymptomCodes)
-    console.log(data)
+  if (data.selectedSymptomCodes.length === 0) {
+    toast.error("Please select at least one symptom.")
+    return
   }
+  await postPatientObservation(data.selectedSymptomCodes)
+  toast.success("Symptoms logged!")
+  router.push("/")
+}
 
   return (
     <>
@@ -59,7 +68,7 @@ export default function Page() {
         )}
         <div className="fixed bottom-15 left-0 w-full px-10 py-6 flex flex-col items-center">
           <div className="w-full max-w-md">
-            <button type="submit">Submit</button> 
+            <button type="submit" className="w-full bg-dark-beige py-2 rounded-sm flex flex-row justify-center items-center">Submit</button> 
           </div>
         </div>      
       </form>

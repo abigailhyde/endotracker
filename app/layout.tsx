@@ -3,6 +3,8 @@ import { Hedvig_Letters_Serif } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./ui/Nav";
 import { SWRegister } from "./sw-register";
+import { Toaster } from "sonner"
+
 
 const hedvig = Hedvig_Letters_Serif({
   subsets: ["latin"],
@@ -35,7 +37,7 @@ export default function RootLayout({
       lang="en"
       className={`${hedvig.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}<Nav /><SWRegister /></body>
+      <body className="min-h-full flex flex-col">{children}<Nav /><SWRegister /><Toaster /></body>
     </html>
   );
 }
