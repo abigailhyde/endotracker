@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     }).join("\n");
 
     const prompt = `You are a compassionate assistant helping a patient with endometriosis understand their symptoms and predict flare-ups.
-Analyze the symptom log below. Identify patterns, note any clusters or recurring combinations, and predict when flareups may be likely. Be concise and patient-friendly. Do not ask for or prompt a response. Don't mention codes, only the name of the symptom logged, even if it doesn't match. Do not use any bold text, italics, or other markdown. Do not include a title or headings, keep it conversational. Less than 120 words.
+Analyze the symptom log below. Identify patterns, note any clusters or recurring combinations, and predict when flareups may be likely. Be concise and patient-friendly. Do not ask for or prompt a response. Don't mention codes, only the name of the symptom logged, even if it doesn't match. Do not use any bold text, italics, or other markdown. Do not include a title or headings, keep it conversational. Less than 100 words.
 
 Symptom Log (most recent first):
 ${logLines}`;

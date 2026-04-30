@@ -57,7 +57,7 @@ export default function Page() {
             )}
           </SymptomSection>
         )}
-        <div className="fixed bottom-0 left-0 w-full px-10 py-6 flex flex-col items-center">
+        <div className="fixed bottom-15 left-0 w-full px-10 py-6 flex flex-col items-center">
           <div className="w-full max-w-md">
             <button type="submit">Submit</button> 
           </div>
