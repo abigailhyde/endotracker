@@ -14,7 +14,7 @@ export default function Page() {
   const [activeSection, setActiveSection] = useState<string | null>("Physical");
 
   const symptomDataTyped = symptomData as SymptomGroup[]
-``
+
   type Inputs = {
     selectedSymptomCodes: Array<string>
   }

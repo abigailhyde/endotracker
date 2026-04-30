@@ -8,7 +8,11 @@ export default function authCallback() {
     const router = useRouter()
     useEffect(() => {
         FHIR.oauth2.ready()
-        .then(() => router.replace("/home"))
-        .catch(() => router.replace("/welcome?error=auth_failed"))
+            .then(() => {
+                document.cookie = "authenticated=true; path=/"
+                router.replace("/")
+            })
+            .catch(() => router.replace("/welcome?error=auth_failed"))
     })
 }
+

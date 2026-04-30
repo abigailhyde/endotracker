@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hedvig_Letters_Serif } from "next/font/google";
 import "./globals.css";
+import { Nav } from "./ui/Nav";
 
 const hedvig = Hedvig_Letters_Serif({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export default function RootLayout({
       lang="en"
       className={`${hedvig.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children}<Nav /></body>
     </html>
   );
 }

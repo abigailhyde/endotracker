@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getCurrentPatient } from "../lib/fhir/resources";
 import { login } from "../lib/fhir/auth";
 import { useRouter } from "next/navigation";
+import { Button } from "../ui/Button";
 
 export default function HomePage() {
     
@@ -25,5 +26,19 @@ export default function HomePage() {
     if (loading) return <p> Loading... </p>
     if (!patient) return null
 
-    return <p>Welcome, {patient.name?.[0]?.given?.[0]}</p>
+    return <>
+        <p>Welcome, {patient.name?.[0]?.given?.[0]}</p>
+
+        <div className="fixed bottom-30 left-0 w-full px-5 py-6 flex flex-col items-center">
+            <div className="w-full max-w-md"> 
+                <Button to="/providers" text="View provider(s)" />
+            </div>
+        </div>
+
+        <div className="fixed bottom-15 left-0 w-full px-5 py-6 flex flex-col items-center">
+            <div className="w-full max-w-md"> 
+                <Button to="/intake" text="Export data" />
+            </div>
+        </div>
+</>
 }

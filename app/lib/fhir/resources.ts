@@ -16,10 +16,14 @@ export async function getPatientObservations(): Promise<Observation[]> {
     if (!client) {
         return []
     }
+     const patient = await getCurrentPatient()
+    if (!patient?.id) {
+        return []
+    }
 
     return client.request<Observation[]>(
-        "Observation?patient=me",
-        {flat: true}
+        `Observation?.subject.reference=Patient/${patient.id}`,
+        { flat: true }
     )
 }
 
