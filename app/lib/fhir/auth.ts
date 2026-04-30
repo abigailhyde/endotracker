@@ -15,6 +15,6 @@ export async function login() {
 
 export async function logout() {
     sessionStorage.removeItem("SMART_KEY")
-    document.cookie = "authenticated=; path=/; max-age=0"
+    document.cookie = "token=; path=/; max-age=0"
     window.location.href = "/welcome"
 }

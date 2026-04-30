@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Eclips',
+    name: 'Eclipse',
     short_name: 'Eclipse',
     description: 'A Progressive Web App built with Next.js',
     start_url: '/',
