@@ -19,5 +19,7 @@ export default function authCallback() {
             })
             .catch(() => router.replace("/welcome?error=auth_failed"))
     }, [])
+
+    return null
 }
 
