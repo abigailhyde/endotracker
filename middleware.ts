@@ -24,7 +24,7 @@ export function middleware(request: NextRequest) {
     }
 
     if (!token || !isValidJwt(token)) {
-        return NextResponse.redirect(new URL("/welcome", request.url))
+        return NextResponse.redirect(new URL("/welcome?auto=1", request.url))
     }
 
     return NextResponse.next()

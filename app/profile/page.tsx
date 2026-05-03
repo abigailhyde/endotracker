@@ -37,7 +37,7 @@ export default function HomePage() {
 
         <div className="fixed bottom-15 left-0 w-full px-5 py-6 flex flex-col items-center">
             <div className="w-full max-w-md"> 
-                <Button to="/intake" text="Export data" />
+                <Button to="/export" text="Export data" />
             </div>
         </div>
 </>

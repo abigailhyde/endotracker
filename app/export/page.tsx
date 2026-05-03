@@ -58,7 +58,7 @@ export default function Page() {
         <>
             <div className="relative flex items-center justify-center mx-8 mb-3 mt-5">
                 <div className="absolute left-0">
-                    <BackArrow to="/home" />
+                    <BackArrow to="/profile" />
                 </div>
                 <Heading>Export Symptoms</Heading>
             </div>

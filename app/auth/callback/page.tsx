@@ -18,6 +18,6 @@ export default function authCallback() {
                 router.replace("/")
             })
             .catch(() => router.replace("/welcome?error=auth_failed"))
-    })
+    }, [])
 }
 
